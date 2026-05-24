@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas de Contraseñas | Terminal</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="conteiner">
+        <header class="terminal-header">
+            <h1>Sistemas de contraseñas</h1>
+            <div class="status-bar">STATUS: ACTIVE // SECURITY_LEVEL: HIGH</div>
+        </header>
+        
+        <main class="main-content">
+            <section class="informacion">
+                <div class="panel-title">[ DESCRIPCIÓN DEL SISTEMA ]</div>
+                <p>Esta app hace aplicaciones con la secuencia de fibonaci y luego toma los numeros primos de la secuencia en el formulario el usuario pondra su palabra favorita y cada letra en ACCII se sumara con cada numero de la secuencia, En el otro formulario devolvera al numero restando de esa misma secuencia</p>
+                
+                <div class="panel-title" style="margin-top: 15px;">[ ANÁLISIS DE SEGURIDAD Y NECESIDAD ]</div>
+                <p>Los métodos de cifrado tradicionales estáticos son vulnerables a ataques de diccionario y análisis de frecuencias. Este sistema de códigos es indispensable en la seguridad informática moderna porque introduce un <strong>desplazamiento criptográfico dinámico y no lineal</strong>. Al procesar cada carácter mediante la suma de un número primo derivado estrictamente de la sucesión de Fibonacci, se anula cualquier patrón repetitivo. Como resultado, una misma letra repetida dentro de una palabra generará caracteres ASCII finales completamente diferentes según su posición. Esto hace que descifrar el mensaje mediante software de fuerza bruta convencional sea matemáticamente inviable, proporcionando una capa de protección robusta, fluida y altamente eficiente.</p>
+            </section>
+
+            <section class="interface-grid">
+                <div class="form1">
+                    <h3>// CIFRAR PALABRA</h3>
+                    <input type="text" id="palabraInput" placeholder="Entrada de texto plano...">
+                    <button id="btnCifrar">EJECUTAR CIFRADO</button>
+                    <div class="resultado-box">
+                        <span class="label">SALIDA:</span>
+                        <div class="resultado" id="resultadoCifrado"></div>
+                    </div>
+                </div>
+
+                <div class="form2">
+                    <h3>// DESCIFRAR CÓDIGO</h3>
+                    <input type="text" id="codigoInput" placeholder="Entrada de texto cifrado...">
+                    <button id="btnDescifrar">DECODIFICAR DATA</button>
+                    <div class="resultado-box">
+                        <span class="label">SALIDA:</span>
+                        <div class="resultado" id="resultadoDescifrado"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="imagenes-container">
+            <div class="img"><img src="Imagenes/img1.png" alt="Img 1"></div>
+            <div class="img1"><img src="Imagenes/img2.png" alt="Img 2"></div>
+        </footer>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
